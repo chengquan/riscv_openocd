@@ -1,10 +1,7 @@
 # riscv_openocd
 
-“OpenOCD为Debug神器，烧写神器。本文主要汇总一下相关资料，并基于openocd和开源的RISC-V搭建学习demo。同时，感谢ref中各位大佬分享的优质资料和工程。”
 
-
-
-#仿真调试
+## 仿真调试
 
 
 github上的工程调试需要启动3个终端，分别用于 1) VCS仿真  2）OpenOCD Link 3）Telnet交互，具体如下：
@@ -43,7 +40,7 @@ make wave
 其他指令的测试查阅openocd的UG即可。
 
 
-#Reference
+## Reference
 
 [1] OpenOCD github
 

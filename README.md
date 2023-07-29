@@ -1,37 +1,38 @@
-# riscv_openocd
+# riscv_openocd  
 
+小小demo,用于学习openocd debug riscv.
 
 ## 仿真调试
 
 github上的工程调试需要启动3个终端，分别用于 1) VCS仿真  2）OpenOCD Link 3）Telnet交互，具体如下：
 
-Terminal 1）for VCS
+### Terminal 1）for VCS
 
-cd SIM
-make clean
-make install
-make run_test
+cd SIM  
+make clean  
+make install  
+make run_test  
 
 即可得到如下输出，显示44853port正在监听：
 
 
-Terminal 2）for OpenOCD
+### Terminal 2）for OpenOCD
 
-cd openocd
-openocd -f chaos996.cfg
+cd openocd  
+openocd -f chaos996.cfg  
 
 即可得到如下输出，即表明openocd连接已建立：
 
 
-Terminal 3）for Telnet
+### Terminal 3）for Telnet
 
-telnet localhost 4444
+telnet localhost 4444  
 
 连接到4444号port, 输入一些常规测试命令：
 
 结束仿真以后，在termial 1）中键入如下命令启动verdi查看波形：
 
-make wave
+make wave  
 
 即可使用verdi打开rom中0x00000000地址查看数据是否被改写，波形如下：
 

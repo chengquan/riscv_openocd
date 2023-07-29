@@ -1,0 +1,3 @@
+import_DPI jtagdpi_create chaos_soc_tb
+import_DPI jtagdpi_tick chaos_soc_tb
+import_DPI jtagdpi_close chaos_soc_tb

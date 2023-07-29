@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: GPL-2.0-or-later
-
 # MEMORY
 #
 # All Memory regions have two components.
@@ -45,9 +43,9 @@ set RWX_NO_ACCESS     0
 set RWX_X_ONLY        $BIT0
 set RWX_W_ONLY        $BIT1
 set RWX_R_ONLY        $BIT2
-set RWX_RW            [expr {$RWX_R_ONLY + $RWX_W_ONLY}]
-set RWX_R_X           [expr {$RWX_R_ONLY + $RWX_X_ONLY}]
-set RWX_RWX           [expr {$RWX_R_ONLY + $RWX_W_ONLY + $RWX_X_ONLY}]
+set RWX_RW            [expr $RWX_R_ONLY + $RWX_W_ONLY]
+set RWX_R_X           [expr $RWX_R_ONLY + $RWX_X_ONLY]
+set RWX_RWX           [expr $RWX_R_ONLY + $RWX_W_ONLY + $RWX_X_ONLY]
 set UNKNOWN(0,RWX)     $RWX_NO_ACCESS
 
 #     WIDTH       - access width
@@ -56,11 +54,11 @@ set ACCESS_WIDTH_NONE 0
 set ACCESS_WIDTH_8    $BIT0
 set ACCESS_WIDTH_16   $BIT1
 set ACCESS_WIDTH_32   $BIT2
-set ACCESS_WIDTH_ANY  [expr {$ACCESS_WIDTH_8 + $ACCESS_WIDTH_16 + $ACCESS_WIDTH_32}]
+set ACCESS_WIDTH_ANY  [expr $ACCESS_WIDTH_8 + $ACCESS_WIDTH_16 + $ACCESS_WIDTH_32]
 set UNKNOWN(0,ACCESS_WIDTH) $ACCESS_WIDTH_NONE
 
 proc iswithin { ADDRESS BASE LEN } {
-    return [expr {(($ADDRESS - $BASE) >= 0) && (($BASE + $LEN - $ADDRESS) > 0)}]
+    return [expr ((($ADDRESS - $BASE) > 0) && (($ADDRESS - $BASE + $LEN) > 0))]
 }
 
 proc address_info { ADDRESS } {
@@ -81,96 +79,108 @@ proc address_info { ADDRESS } {
 }
 
 proc memread32 {ADDR} {
-    if ![ catch { set foo [read_memory $ADDR 32 1] } msg ] {
-	return $foo
+    set foo(0) 0
+    if ![ catch { mem2array foo 32 $ADDR 1  } msg ] {
+	return $foo(0)
     } else {
 	error "memread32: $msg"
     }
 }
 
 proc memread16 {ADDR} {
-    if ![ catch { set foo [read_memory $ADDR 16 1] } msg ] {
-	return $foo
+    set foo(0) 0
+    if ![ catch { mem2array foo 16 $ADDR 1  } msg ] {
+	return $foo(0)
     } else {
 	error "memread16: $msg"
     }
 }
 
 proc memread8 {ADDR} {
-    if ![ catch { set foo [read_memory $ADDR 8 1] } msg ] {
-	return $foo
+    set foo(0) 0
+    if ![ catch { mem2array foo 8 $ADDR 1  } msg ] {
+	return $foo(0)
     } else {
 	error "memread8: $msg"
     }
 }
 
 proc memwrite32 {ADDR DATA} {
-    if ![ catch { write_memory $ADDR 32 $DATA } msg ] {
-	return $DATA
+    set foo(0) $DATA
+    if ![ catch { array2mem foo 32 $ADDR 1  } msg ] {
+	return $foo(0)
     } else {
 	error "memwrite32: $msg"
     }
 }
 
 proc memwrite16 {ADDR DATA} {
-    if ![ catch { write_memory $ADDR 16 $DATA } msg ] {
-	return $DATA
+    set foo(0) $DATA
+    if ![ catch { array2mem foo 16 $ADDR 1  } msg ] {
+	return $foo(0)
     } else {
 	error "memwrite16: $msg"
     }
 }
 
 proc memwrite8 {ADDR DATA} {
-    if ![ catch { write_memory $ADDR 8 $DATA } msg ] {
-	return $DATA
+    set foo(0) $DATA
+    if ![ catch { array2mem foo 8 $ADDR 1  } msg ] {
+	return $foo(0)
     } else {
 	error "memwrite8: $msg"
     }
 }
 
 proc memread32_phys {ADDR} {
-    if ![ catch { set foo [read_memory $ADDR 32 1 phys] } msg ] {
-	return $foo
+    set foo(0) 0
+    if ![ catch { mem2array foo 32 $ADDR 1 phys } msg ] {
+	return $foo(0)
     } else {
 	error "memread32: $msg"
     }
 }
 
 proc memread16_phys {ADDR} {
-    if ![ catch { set foo [read_memory $ADDR 16 1 phys] } msg ] {
-	return $foo
+    set foo(0) 0
+    if ![ catch { mem2array foo 16 $ADDR 1 phys } msg ] {
+	return $foo(0)
     } else {
 	error "memread16: $msg"
     }
 }
 
 proc memread8_phys {ADDR} {
-    if ![ catch { set foo [read_memory $ADDR 8 1 phys] } msg ] {
-	return $foo
+    set foo(0) 0
+    if ![ catch { mem2array foo 8 $ADDR 1 phys } msg ] {
+	return $foo(0)
     } else {
 	error "memread8: $msg"
     }
 }
 
 proc memwrite32_phys {ADDR DATA} {
-    if ![ catch { write_memory $ADDR 32 $DATA phys } msg ] {
-	return $DATA
+    set foo(0) $DATA
+    if ![ catch { array2mem foo 32 $ADDR 1 phys } msg ] {
+	return $foo(0)
     } else {
 	error "memwrite32: $msg"
     }
 }
 
 proc memwrite16_phys {ADDR DATA} {
-    if ![ catch { write_memory $ADDR 16 $DATA phys } msg ] {
-	return $DATA
+    set foo(0) $DATA
+    if ![ catch { array2mem foo 16 $ADDR 1 phys } msg ] {
+	return $foo(0)
     } else {
 	error "memwrite16: $msg"
     }
 }
 
 proc memwrite8_phys {ADDR DATA} {
-    if ![ catch { write_memory $ADDR 8 $DATA phys } msg ] {
-	return $DATA
+    set foo(0) $DATA
+    if ![ catch { array2mem foo 8 $ADDR 1 phys } msg ] {
+	return $foo(0)
     } else {
 	error "memwrite8: $msg"
     }

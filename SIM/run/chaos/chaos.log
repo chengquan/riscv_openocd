@@ -1,0 +1,26 @@
+Notice: timing checks disabled with +notimingcheck at compile-time
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP1_Full64; Runtime version Q-2020.03-SP1_Full64;  Jul 25 17:30 2023
+NOTE: automatic random seed used: 3825436730
+test running...
+Time Out.
+VCS used
+*Verdi* Loading libsscore_vcs202003.so
+FSDB Dumper for VCS, Release Verdi_Q-2020.03-1, Linux x86_64/64bit, 04/12/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'chaos_soc_tb.fsdb'
+*Verdi* : Begin traversing the scope (chaos_soc_tb), layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+
+JTAG: Virtual JTAG interface jtag0 is listening on port 44853. Use
+OpenOCD and the following configuration to connect:
+  interface remote_bitbang
+  remote_bitbang_host localhost
+  remote_bitbang_port 44853
+=============================
+This is Chaos996 SoC Platform
+The vendor ID is 5175616e
+=============================
+jtag0: Accepted client connection

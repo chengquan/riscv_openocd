@@ -1,0 +1,116 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "spi": [
+        "spi",
+        "jdG3K",
+        "module",
+        2
+    ],
+    "gpio": [
+        "gpio",
+        "NhjRS",
+        "module",
+        3
+    ],
+    "timer": [
+        "timer",
+        "t5sdY",
+        "module",
+        4
+    ],
+    "uart": [
+        "uart",
+        "bvImI",
+        "module",
+        5
+    ],
+    "clint": [
+        "clint",
+        "qW9kS",
+        "module",
+        6
+    ],
+    "div": [
+        "div",
+        "rzVRz",
+        "module",
+        7
+    ],
+    "rib": [
+        "rib",
+        "Duk6f",
+        "module",
+        8
+    ],
+    "uart_rx_print": [
+        "uart_rx_print",
+        "DNwmK",
+        "module",
+        9
+    ],
+    "uart_debug": [
+        "uart_debug",
+        "ggzKQ",
+        "module",
+        10
+    ],
+    "jtag_top": [
+        "jtag_top",
+        "vTyec",
+        "module",
+        11
+    ],
+    "gen_ticks_sync": [
+        "gen_ticks_sync",
+        "gRPVn",
+        "module",
+        12
+    ],
+    "gen_rst_1_dff": [
+        "gen_rst_1_dff",
+        "WBbf5",
+        "module",
+        13
+    ],
+    "gen_rst_def_dff": [
+        "gen_rst_def_dff",
+        "vehQv",
+        "module",
+        14
+    ],
+    "gen_en_dff": [
+        "gen_en_dff",
+        "DIPR0",
+        "module",
+        15
+    ],
+    "full_handshake_rx": [
+        "full_handshake_rx",
+        "aLYw7",
+        "module",
+        16
+    ],
+    "full_handshake_tx": [
+        "full_handshake_tx",
+        "HD5gB",
+        "module",
+        17
+    ],
+    "chaos_soc_tb": [
+        "chaos_soc_tb",
+        "AMcuk",
+        "module",
+        18
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        19
+    ]
+}

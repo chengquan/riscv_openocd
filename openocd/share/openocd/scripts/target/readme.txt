@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: GPL-2.0-or-later
-
 Prerequisites:
 The users of OpenOCD as well as computer programs interacting with OpenOCD are expecting that certain commands
 do the same thing across all the targets.
@@ -28,15 +26,16 @@ assumed that all write-protect mechanisms should be disabled.
 flash write_image [file] <parameters>
 verify_image [file] <parameters>
 
-4. adapter speed sets the maximum speed (or alternatively RCLK). If invoked
+4. adapter_khz sets the maximum speed (or alternatively RCLK). If invoked
 multiple times only the last setting is used.
 
 interface/xxx.cfg files are always executed *before* target/xxx.cfg
-files, so any adapter speed in interface/xxx.cfg will be overridden by
-target/xxx.cfg. adapter speed in interface/xxx.cfg would then, effectively,
+files, so any adapter_khz in interface/xxx.cfg will be overridden by
+target/xxx.cfg. adapter_khz in interface/xxx.cfg would then, effectively,
 set the default JTAG speed.
 
 Note that a target/xxx.cfg file can invoke another target/yyy.cfg file,
 so one can create target subtype configurations where e.g. only
 amount of DRAM, oscillator speeds differ and having a single
 config file for the default/common settings.
+

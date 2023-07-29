@@ -1,0 +1,256 @@
+4        
+0 ../core/defines.v
+0 /usr/synopsys/vcs/Q-2020.03-SP1/etc/systemverilog/../core/defines.v
+0 defines.v
+0 /usr/synopsys/vcs/Q-2020.03-SP1/etc/systemverilog/defines.v
+74
++cli+1
++define+no_warning
++incdir+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/jtag_dpi/common/tcp_server/+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/jtag_dpi/jtagdpi/+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/acc/+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/flash_model/+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/qspi_flash/
++itf+/usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcsdp_lite.tab
++lint=all,noSVA-NSVU,noVCDE,noUI,noSVA-CE,noSVA-DIU
++memcbk
++nospecify
++notimingcheck
++v2k
++vcsd1
++vpi
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/synopsys/vcs/Q-2020.03-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/jtag_dpi/common/tcp_server/tcp_server.cc /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/jtag_dpi/jtagdpi/jtagdpi.cc
+-Mexternalobj=
+-Mldflags=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/qcheng/anaconda3/lib -Wl,-rpath-link,/home/qcheng/anaconda3/lib -L/home/qcheng/anaconda3/lib -Wl,--no-as-needed -rdynamic
+-Mobjects= /usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvirsim.so /usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/liberrorinf.so /usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libsnpsmalloc.so /usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/usr/synopsys/verdi/Q-2020.03-1/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/synopsys/vcs/Q-2020.03-SP1/include
+-Mxllcflags=
+-P
+-Xcbug=0x1
+-debug=1
+-debug_access+all
+-fsdb
+-full64
+-gen_obj
+-negdelay
+-picarchive
+-q
+-sverilog
+-timescale=1ns/10ps
+/usr/synopsys/vcs/Q-2020.03-SP1/linux64/bin/vcs1
+/usr/synopsys/verdi/Q-2020.03-1/share/PLI/VCS/LINUX64/verdi.tab
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/jtag_dpi/jtagdpi/jtagdpi.sv
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/rom.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/spi.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/ram.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/gpio.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/timer.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/uart.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/tinyriscv.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/ex.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/regs.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/id_ex.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/clint.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/if_id.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/div.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/pc_reg.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/defines.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/rib.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/csr_reg.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/ctrl.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/id.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/soc/tinyriscv_soc_top.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/dut/uart_rx_print.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/debug/jtag_dm.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/debug/uart_debug.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/debug/jtag_top.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/debug/jtag_driver.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/utils/gen_buf.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/utils/gen_dff.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/utils/full_handshake_rx.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/utils/full_handshake_tx.v
+/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/TB/chaos_soc_tb.v
+130
+host_alias=x86_64-conda-linux-gnu
+build_alias=x86_64-conda-linux-gnu
+_CONDA_PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_x86_64_conda_linux_gnu
+_CE_M=
+_CE_CONDA=
+XMODIFIERS=@im=fcitx
+XILINX_PATH=/home/qcheng/VIVADOPATCH/vivado
+XDG_SESSION_TYPE=x11
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_CLASS=user
+XDG_RUNTIME_DIR=/run/user/9309
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+XAUTHORITY=/run/user/9309/gdm/Xauthority
+WINDOWPATH=2
+VTE_VERSION=6800
+VMR_MODE_FLAG=64
+VERDI_HOME=/usr/synopsys/verdi/Q-2020.03-1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/synopsys/vcs/Q-2020.03-SP1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USER_PATH=/home/qcheng/anaconda3/bin:/home/qcheng/anaconda3/condabin:/home/work/qcheng/ARM_MC/TS83CA002-FE-r3p2-0eac0/arm/tsmc/cln22ul/sram_sp_uhde_svt_mvt/r3p2/bin:/home/work/qcheng/ARM_MC/TS83MX000-FE-r4p0-0eac0/arm/tsmc/cln22ul/memExplorer/r4p0/bin:/home/work/qcheng/MYDATA/Pulp_GCC/pulpgcc/bin:/home/qcheng/.local/bin:/home/work/qcheng/MYDATA/Openocd/openocd/2022.08/bin:/home/work/qcheng/MC2/MC2_2017.08.00/bin:/home/qcheng/PULP/riscv-gcc-ubuntu/bin:/opt/xilinx/Vitis_HLS/2022.2/bin:/opt/xilinx/Vitis/2022.2/bin:/opt/xilinx/Vivado/2022.2/bin:/opt/MATLAB/R2020a/bin:/usr/local/cuda-11.7/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/opt/tool/lavis/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+USERNAME=qcheng
+UNAME=/bin/uname
+TOOL_LICENSE_FILE=1700@vdec-cad1:1700@vdec-cad2:1700@vdec-cad3:/home/work/qcheng/MC2/SRAM_LICENSE_11385::27007@vdec-cad2
+TOOL_HOME=/usr/synopsys/vcs/Q-2020.03-SP1/linux64
+TERMINFO=/usr/share/terminfo
+SYSTEMD_EXEC_PID=2576
+STRIP=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-strip
+STRINGS=/bin/strings
+SSH_AUTH_SOCK=/run/user/9309/keyring/ssh
+SSH_AGENT_LAUNCHER=gnome-keyring
+SIZE=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-size
+SINGULARITY_NAME=vcs_verdi2020.sif
+SINGULARITY_ENVIRONMENT=/.singularity.d/env/91-environment.sh
+SINGULARITY_CONTAINER=/home/work/default/container/vcs_verdi2020.sif
+SINGULARITY_COMMAND=shell
+SINGULARITY_BIND=
+SIM_TOOL=vcs
+SESSION_MANAGER=local/yashiro:@/tmp/.ICE-unix/2576,unix/yashiro:/tmp/.ICE-unix/2576
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RUN_DIR=/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run
+READELF=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-readelf
+RANLIB=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-ranlib
+QT_IM_MODULE=fcitx
+QT_ACCESSIBILITY=1
+PULP_RISCV_GCC_TOOLCHAIN=/home/work/qcheng/MYDATA/Pulp_GCC/pulpgcc
+PAPERSIZE=letter
+OVA_UUM=0
+OBJDUMP=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-objdump
+OBJCOPY=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-objcopy
+OA_UNSUPPORTED_PLAT=linux_rhel60
+NM=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-nm
+MGLS_LICENSE_FILE=1717@vdec-cad1:1717@vdec-cad2:1717@vdec-cad3
+MFLAGS=-w
+MC_HOME=/home/work/qcheng/MC2/mc2prj/tsn22ulpdpsram_20170800_100a
+MC2_INSTALL_DIR=/home/work/qcheng/MC2/MC2_2017.08.00
+MAKEOVERRIDES=${-*-command-variables-*-}
+MAKELEVEL=2
+MAKEFLAGS=w -- SIM_TOOL=vcs RUN_DIR=/home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run
+LIBRARY_PATH=:/usr/lib/x86_64-linux-gnu
+LD_GOLD=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-ld.gold
+LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/qcheng/anaconda3/lib -Wl,-rpath-link,/home/qcheng/anaconda3/lib -L/home/qcheng/anaconda3/lib -Wl,--no-as-needed    -rdynamic 
+LD=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-ld
+LC_TIME=en_US.UTF-8
+LC_TELEPHONE=en_US.UTF-8
+LC_PAPER=en_US.UTF-8
+LC_NUMERIC=en_US.UTF-8
+LC_NAME=en_US.UTF-8
+LC_MONETARY=en_US.UTF-8
+LC_MEASUREMENT=en_US.UTF-8
+LC_IDENTIFICATION=en_US.UTF-8
+LC_ALL=C
+LC_ADDRESS=en_US.UTF-8
+IM_CONFIG_PHASE=1
+GXX=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-g++
+GTK_MODULES=gail:atk-bridge
+GTK_IM_MODULE=fcitx
+GTK3_MODULES=xapp-gtk3-module
+GPROF=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-gprof
+GPG_AGENT_INFO=/run/user/9309/gnupg/S.gpg-agent:0:1
+GNOME_TERMINAL_SERVICE=:1.225
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/0823e7e6_9a51_4e1e_8eff_44b1dea2f87e
+GNOME_SHELL_SESSION_MODE=ubuntu
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDMSESSION=ubuntu
+GCC_RANLIB=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib
+GCC_NM=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-gcc-nm
+GCC_AR=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-gcc-ar
+GCC=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-gcc
+FLEXLM_BORROWFILE=/home/qcheng/.yashiro-borrow.txt
+ELFEDIT=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-elfedit
+DESKTOP_SESSION=ubuntu
+DEBUG_CXXFLAGS=-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/qcheng/anaconda3/include
+DEBUG_CPPFLAGS=-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/qcheng/anaconda3/include
+DEBUG_CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/qcheng/anaconda3/include
+DBUS_STARTER_BUS_TYPE=session
+DBUS_STARTER_ADDRESS=unix:path=/run/user/9309/bus,guid=44c16e8d78369af3dc58808364aff163
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/9309/bus,guid=44c16e8d78369af3dc58808364aff163
+CXX_FOR_BUILD=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-c++
+CXXFLAGS=-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/qcheng/anaconda3/include
+CXXFILT=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-c++filt
+CXX=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-c++
+CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/qcheng/anaconda3/include
+CPP=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-cpp
+CONDA_SHLVL=1
+CONDA_PYTHON_EXE=/home/qcheng/anaconda3/bin/python
+CONDA_PROMPT_MODIFIER=(base) 
+CONDA_PREFIX=/home/qcheng/anaconda3
+CONDA_EXE=/home/qcheng/anaconda3/bin/conda
+CONDA_DEFAULT_ENV=base
+CONDA_BUILD_SYSROOT=/home/qcheng/anaconda3/x86_64-conda-linux-gnu/sysroot
+COLORTERM=truecolor
+CMAKE_PREFIX_PATH=/home/qcheng/anaconda3:/home/qcheng/anaconda3/x86_64-conda-linux-gnu/sysroot/usr
+CMAKE_ARGS=-DCMAKE_LINKER=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-strip
+CLUTTER_IM_MODULE=xim
+CFLAGS= -pipe -fPIC 
+CDS_LIC_FILE=5280@vdec-cad1:5280@vdec-cad2:5280@vdec-cad3:5280@collabo4
+CC_FOR_BUILD=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-cc
+CC=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-cc
+BUILD=x86_64-conda-linux-gnu
+AS=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-as
+AR=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-ar
+ADDR2LINE=/home/qcheng/anaconda3/bin/x86_64-conda-linux-gnu-addr2line
+0
+34
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/../core/defines.v
+1690273442 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/TB/chaos_soc_tb.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/utils/full_handshake_tx.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/utils/full_handshake_rx.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/utils/gen_dff.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/utils/gen_buf.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/debug/jtag_driver.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/debug/jtag_top.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/debug/uart_debug.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/debug/jtag_dm.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/dut/uart_rx_print.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/soc/tinyriscv_soc_top.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/id.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/ctrl.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/csr_reg.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/rib.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/defines.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/pc_reg.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/div.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/if_id.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/clint.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/id_ex.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/regs.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/ex.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/core/tinyriscv.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/uart.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/timer.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/gpio.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/ram.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/spi.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/perips/rom.v
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/jtag_dpi/jtagdpi/jtagdpi.sv
+1586691846 /usr/synopsys/verdi/Q-2020.03-1/share/PLI/VCS/LINUX64/verdi.tab
+1590808341 /usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/vcsdp_lite.tab
+6
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/jtag_dpi/common/tcp_server/tcp_server.cc
+1690273434 /home/work/qcheng/riscv_openocd/riscv_openocd/SIM/run/../install/RTL/jtag_dpi/jtagdpi/jtagdpi.cc
+1590809634 /usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvirsim.so
+1590809310 /usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/liberrorinf.so
+1590809251 /usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libsnpsmalloc.so
+1590809285 /usr/synopsys/vcs/Q-2020.03-SP1/linux64/lib/libvfs.so
+1690273450 simv.daidir
+-1 partitionlib

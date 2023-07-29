@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: GPL-2.0-or-later
-
 # ARM Debug Interface V5 (ADI_V5) utility
 # ... Mostly for SWJ-DP (not SW-DP or JTAG-DP, since
 # SW-DP and JTAG-DP targets don't need to switch based
@@ -26,12 +24,11 @@ if [catch {transport select}] {
 }
 
 proc swj_newdap {chip tag args} {
- if [using_jtag] {
+ if [using_hla] {
+     eval hla newtap $chip $tag $args
+ } elseif [using_jtag] {
      eval jtag newtap $chip $tag $args
  } elseif [using_swd] {
      eval swd newdap $chip $tag $args
- } else {
-     echo "Error: transport '[ transport select ]' not supported by swj_newdap"
-     shutdown
  }
 }

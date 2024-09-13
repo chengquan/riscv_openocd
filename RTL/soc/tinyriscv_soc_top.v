@@ -238,6 +238,7 @@ module tinyriscv_soc_top(
     );
 
     // spi模块例化
+    /*
     spi spi_0(
         .clk(clk),
         .rst(rst),
@@ -249,7 +250,7 @@ module tinyriscv_soc_top(
         .spi_miso(spi_miso),
         .spi_ss(spi_ss),
         .spi_clk(spi_clk)
-    );
+    );*/
 
     // rib模块例化
     rib u_rib(
@@ -359,5 +360,37 @@ module tinyriscv_soc_top(
         .halt_req_o(jtag_halt_req_o),
         .reset_req_o(jtag_reset_req_o)
     );
+
+    wire scan_rst;
+    wire scan_en;
+    wire scan_in; 
+    wire scan_out;
+    //revised by hashimotoLab_qcheng
+    scan_chain_ctrl u_sc_ctrl
+    (
+        .clk         (clk),
+        .rstn        (rst),
+        .sc_addr_i   (s5_addr_o),
+        .sc_data_i   (s5_data_o),    
+        .sc_we_i     (s5_we_o),                
+        .sc_data_o   (s5_data_i),    
+        .scan_in     (scan_in),                
+        .scan_out    (scan_out),               
+        .scan_en     (scan_en),                
+        .scan_rst    (scan_rst)             
+
+    );
+
+    //revised by hashimotoLab_qcheng
+    //this is a virtual scan chain
+    scan_chain u_sc(
+        .clk       (clk),
+        .scan_rst  (scan_rst),
+        .scan_en   (scan_en), 
+        .scan_in   (scan_in), 
+        .scan_out  (scan_out)
+    );
+
+
 
 endmodule
